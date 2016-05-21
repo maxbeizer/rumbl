@@ -7,4 +7,11 @@ defmodule Rumbl.UserView do
     |> String.split(" ")
     |> Enum.at(0)
   end
+
+
+  def error_tag(form, field) do
+    if error = form.errors[field] do
+      content_tag :span, error, class: "help-block"
+    end
+  end
 end
