@@ -36,7 +36,7 @@ defmodule Rumbl.Mixfile do
      {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 2.3"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
-     {:comeonin, "~> 2.0"},
+     {:comeonin, "~> 2.3"},
      {:cowboy, "~> 1.0"}]
   end
 
