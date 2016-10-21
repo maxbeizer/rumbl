@@ -5,6 +5,9 @@
 # is restricted to this project.
 use Mix.Config
 
+config :rumbl,
+  ecto_repos: [Rumbl.Repo]
+
 # Configures the endpoint
 config :rumbl, Rumbl.Endpoint,
   url: [host: "localhost"],
