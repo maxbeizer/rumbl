@@ -27,7 +27,7 @@ defmodule Rumbl.VideoChannel do
   def handle_in("new_annotation", params, user, socket) do
     changeset = user
       |> build_assoc(:annotations, video_id: socket.assigns.video_id)
-      |> Rumbl.Annonation.changeset(params)
+      |> Rumbl.Annotation.changeset(params)
 
     case Repo.insert(changeset) do
       {:ok, annotation} ->

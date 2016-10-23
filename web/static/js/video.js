@@ -40,7 +40,7 @@ let Video = {
     })
 
     vidChannel.on("new_annotation", resp => {
-      VideoChannel.params.last_seen_id = resp.id
+      videoChannel.params.last_seen_id = resp.id
       this.renderAnnotation(msgContainer, resp)
     })
 
