@@ -8,6 +8,9 @@ defmodule Rumbl.UserView do
     |> Enum.at(0)
   end
 
+  def render("user.json", %{user: user}) do
+    %{id: user.id, username: user.username}
+  end
 
   def error_tag(form, field) do
     if error = form.errors[field] do
